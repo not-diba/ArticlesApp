@@ -1,0 +1,15 @@
+{% extends 'layouts.html' %}
+
+{% block body %}
+    
+    <div class="jumbotron text-center">
+        <h1>Welcome to my Articles App</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reiciendis, blanditiis sit velit dolorem quisquam magni consequuntur laboriosam nulla, placeat minus libero harum odio modi natus! Officiis cupiditate facere ab!</p>
+
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>   
+
+{% endblock %}
